@@ -26,7 +26,9 @@ import os
 
 #os.getenv obtem o valor de LANG diretamente do SO, e caso a variavel esteja
 #vazia o valor padrao sera en_US, e utilizará até o quinto caracter da var
+
 current_language = os.getenv("LANG", "en_US")[:5]
+
 msg = "Hello, World!"
 
 if current_language == "pt_BR":
